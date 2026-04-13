@@ -1,0 +1,110 @@
+/* Palette: warm paper, deep umber text, sage accent (see Adobe Color / harmony) */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "DM Sans", "Segoe UI", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #2c2824;
+  background: linear-gradient(165deg, #ebe6df 0%, #f5f1eb 42%, #efe9e2 100%);
+  background-attachment: fixed;
+}
+
+.app-shell {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.app-header {
+  margin-bottom: 1.75rem;
+}
+
+.app-title {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.65rem, 4vw, 2.05rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #1f1c19;
+}
+
+.app-lede {
+  margin: 0;
+  max-width: 42rem;
+  color: #4a433c;
+  font-size: 1.02rem;
+}
+
+.region-panel {
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.25rem 1.1rem;
+  background: #fffefb;
+  border-radius: 12px;
+  border: 1px solid rgba(45, 106, 79, 0.18);
+  box-shadow: 0 4px 20px rgba(44, 40, 36, 0.06);
+  border-left: 4px solid #2d6a4f;
+}
+
+.region-panel__label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #5c534a;
+  margin-bottom: 0.65rem;
+}
+
+.region-radio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.15rem;
+  align-items: center;
+}
+
+.region-radio__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: #2c2824;
+  padding: 0.35rem 0.15rem;
+  border-radius: 6px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.region-radio__label:hover {
+  background: rgba(45, 106, 79, 0.08);
+  color: #1f1c19;
+}
+
+.region-radio__input {
+  accent-color: #2d6a4f;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.chart-card {
+  background: #fffefb;
+  border-radius: 14px;
+  padding: 0.75rem 0.5rem 0.25rem;
+  border: 1px solid rgba(44, 40, 36, 0.08);
+  box-shadow:
+    0 8px 32px rgba(44, 40, 36, 0.08),
+    0 1px 0 rgba(255, 255, 255, 0.8) inset;
+}
+
+.chart-card .js-plotly-plot {
+  border-radius: 10px;
+}
