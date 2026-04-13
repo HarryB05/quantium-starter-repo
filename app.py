@@ -9,7 +9,6 @@ from dash import Dash, Input, Output, callback, dcc, html
 DATA_PATH = Path(__file__).resolve().parent / "data" / "pink_morsel_sales.csv"
 PRICE_CHANGE_DATE = pd.Timestamp("2021-01-15")
 
-# Plot colours aligned with assets/style.css (sage / warm neutrals)
 COLOR_PAGE_TEXT = "#2c2824"
 COLOR_LINE = "#2d6a4f"
 COLOR_VLINE = "#b85c38"
